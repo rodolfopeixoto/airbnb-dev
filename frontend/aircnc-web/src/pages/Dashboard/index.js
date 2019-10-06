@@ -26,7 +26,6 @@ export default function Dashboard(){
           <li key={spot._id}>
             <header style={ { backgroundImage: `url(${spot.thumbnail_url})` } } />
             <strong>{spot.company}</strong>
-            { console.log('spot',spot)}
             <span>{spot.price ? `R$${spot.price}/dia` : 'GRATUITO' }</span>
           </li>
         ))}
